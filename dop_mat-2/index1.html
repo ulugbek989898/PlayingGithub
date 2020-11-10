@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetch api Post example</title>
+</head>
+<body>
+<form id="form" method="Post">
+	<input type="text" name="" id="name" placeholder="name">
+	<input type="text" name="LastName" id="LastName" placeholder="LastName">
+	<input type="" name="id" id="id" placeholder="id">
+	<input type="submit" name="" value="Add todo">
+</form>
+<div id="temperature">
+	
+</div>
+
+
+<script type="text/javascript">
+	var dd =fetch('http://api.openweathermap.org/data/2.5/weather?q=London&APPID=6dd615ee3663ab329e17c388aec88988&units=metric')
+		.then(res => res.json())
+		.then(data => console.log(data));
+	// document.getElementById("temperature") = dd;
+	console.log(dd);
+
+</script>
+</body>
+</html>
