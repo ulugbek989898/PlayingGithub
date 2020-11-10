@@ -1,2 +1,3 @@
 The default interactive shell is now zsh.
 The default interactive shell is now zsh.
+Ulugbek Isroilov
